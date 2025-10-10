@@ -17,7 +17,6 @@ header {
   text-align: center;
   padding: 1%;
   position:sticky;
-
 }
 
 h1 {
@@ -95,7 +94,6 @@ nav a:hover {
   font-size: 0.9rem;
   color: #777;
 }
-
  @keyframes swing {
   0%   { transform: rotate(-10deg); }
   50%  { transform: rotate(10deg) ;}
