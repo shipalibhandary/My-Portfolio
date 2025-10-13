@@ -18,3 +18,5 @@ prevbtn.addEventListener('click',()=>{
     current= (current-1 + certificate.length) % certificate.length;
     showCertificate(current);
 });
+
+// simply prevbtn.addEventListener( )
