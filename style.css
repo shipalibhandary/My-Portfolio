@@ -220,12 +220,7 @@ h2 {
   object-fit: contain;
   border-radius: 4px;
 }
-/* .project-polaroid .caption {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #4b2e2e;
-} */
+
 .card-title {
   position: absolute;
   top: -18px;
@@ -292,4 +287,75 @@ h2 {
   color: #b08c74;
 }
 
+/* contact section's style */
+.contact-form {
+  background: #e3d1be ;
+  padding: 80px 20%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.contact-heading{
+  font-family: "Dancing Script", cursive;
+  font-size:2rem;
+  font-style: italic;
+  color: #4b2e2e;
+}
+.contact-form p{
+  color: #4b2e2e;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.contact-form form {
+  max-width:600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 6%;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, #f9c5d1, #fddde6);
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+/* social links */
+.social-section {
+  text-align: center;
+  padding: 30px 0;
+  background: #fffaf6; /* same or complementary color as your contact section */
+}
+
+.social-link {
+  margin: 0 15px;
+  color: #6b4f3b;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-link:hover {
+  color: #b08c74;
+  transform: scale(1.2);
+}
 
