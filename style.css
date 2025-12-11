@@ -22,19 +22,37 @@ header {
 h1 {
   margin-bottom: 20px;
 }
-
-nav a{
-  color: #fff;
-  margin: 0 15px;
+.navbar {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  padding: 15px 40px; 
+}
+.nav-links a {
+  margin-right: 25px;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 16px;
   display: inline-block;
+  transition: transform 0.25s ease color 0.25s ease;
+  
+}
+.resume-btn {
+  padding: 8px 18px;
+  background-color: #f9ebeb;  /* change to your preferred color */
+  color: #a47148;;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.resume-btn:hover {
+  background-color: #e3d0c5;
 }
 
-nav a:hover {
+.nav-links a:hover {
   text-decoration: underline;
-  transform: scale(1.2);
-}
+  transform: scale(1.15);
+} 
 
 .about-id {
   display: flex;
@@ -103,7 +121,7 @@ nav a:hover {
 .about-text {
   max-width: 500px;
   font-family: 'poppins',sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
   color: #444;
   color: #5a3825;
 }
@@ -119,7 +137,7 @@ nav a:hover {
 }
 .about-text .highlight {
   color: #6b3719; 
-  font-weight: 600;
+  font-weight: 500;
 }
 .about-text strong {
   color: #6b3719;
@@ -155,7 +173,7 @@ h2 {
   border-right:3px solid #333;
   white-space: nowrap;
   overflow: hidden;
-  animation:typing 5s steps(50,end) infinite, blink 0.7s step-end infinite;
+  animation:typing 8s steps(50,end) infinite, blink 0.7s step-end infinite;
 }
 @keyframes typing{
   from {width:0;}
@@ -209,8 +227,7 @@ h2 {
   transition: 0.10s;
 }
 .project-card:hover{
-  transform: scale(1.20);
-
+  transform: scale(1.1);
 }
 
 .project-card img {
@@ -233,6 +250,7 @@ h2 {
   color: #333;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
+
 .project-card.beige { background: #CCD1F0;}
 .project-card.brown { background:#BBDCE5;}
 .project-card.dark{ background: #F5BABB; color: #fff;}
@@ -258,8 +276,8 @@ h2 {
   position: relative;
 }
 .certificate-container{
-  width:700px;
-  height:450px;
+  width:550px;
+  height:300px;
   overflow:hidden;
   border-radius: 20px;
   box-shadow:  0 10px 25px rgba(97, 6, 6, 0.2);  
@@ -326,7 +344,7 @@ h2 {
 }
 
 .contact-form button {
-  background: linear-gradient(135deg, #f9c5d1, #fddde6);
+  background: #a47148;
   border: none;
   padding: 12px;
   border-radius: 25px;
@@ -336,26 +354,72 @@ h2 {
 }
 
 .contact-form button:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-/* social links */
-.social-section {
-  text-align: center;
-  padding: 30px 0;
-  background: #fffaf6; /* same or complementary color as your contact section */
-}
 
-.social-link {
-  margin: 0 15px;
+/* footer */
+.footer {
+  background: #f8f4ef;
   color: #6b4f3b;
-  font-size: 2rem;
-  text-decoration: none;
-  transition: 0.3s ease;
+  text-align: center;
+  padding: 25px 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  border-top: 1px solid #e0d6cc;
+  animation: fadeIn 1s ease-in;
 }
 
-.social-link:hover {
+.footer .social-links {
+  margin-bottom: 10px;
+}
+
+.footer .social-links a {
+  color: #6b4f3b;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer .social-links a:hover {
   color: #b08c74;
-  transform: scale(1.2);
+  transform: scale(1.5);
+}
+
+.footer .copyright {
+  font-size: 11px;
+}
+
+
+/* SPLASH SCREEN (Cover Page) */
+/* Full-screen Cover Page */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+#splash-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 🔥 Ensures full image covers screen */
+  object-position: center top ;
+  display: block;
+  background-color: #edc6bf;
+}
+
+/* Fade out animation */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 

@@ -19,4 +19,34 @@ prevbtn.addEventListener('click',()=>{
     showCertificate(current);
 });
 
-// simply prevbtn.addEventListener( )
+//handling contact from
+const form = document.getElementById("contactform");
+const statusTxt = document.getElementById("status");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_0xkjv28",   // ✔ correct service ID
+        "template_vtb25x7",  // ✔ correct template ID
+        this
+    )
+    .then(() => {
+        statusTxt.innerText = "Message sent successfully!";
+        statusTxt.style.color = "green";
+        form.reset();
+    })
+    .catch((error) => {
+        statusTxt.innerText = "Failed to send message.";
+        statusTxt.style.color = "red";
+        console.error("EmailJS Error:", error);
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    document.getElementById("splash-screen").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  }, 4000); 
+});
