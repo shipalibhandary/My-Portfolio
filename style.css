@@ -1,3 +1,9 @@
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -233,7 +239,7 @@ h2 {
 .project-card img {
   margin-top: 5%;
   width: 100%;
-  height: 200%;
+  height: auto;
   object-fit: contain;
   border-radius: 4px;
 }
@@ -410,7 +416,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: contain;   /* 🔥 Ensures full image covers screen */
-  object-position: center top ;
+  object-position: center center ;
   display: block;
   background-color: #edc6bf;
 }
@@ -423,3 +429,64 @@ h2 {
   }
 }
 
+@media (max-width: 768px) {
+  #splash-screen img {
+    object-fit: contain; /* Show whole image on mobile */
+    background-color: black; /* fills empty space */
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .resume-btn {
+    margin-top: 10px;
+  }
+
+  /* About section */
+  .about-id {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Project grid */
+  .projects-grid {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Certificate slider */
+  .certificate-container img {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Contact form */
+  .contact-form form {
+    width: 90%;
+    margin: auto;
+  }
+}
