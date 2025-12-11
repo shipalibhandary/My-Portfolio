@@ -47,5 +47,5 @@ form.addEventListener("submit", function(e) {
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     document.getElementById("splash-screen").style.display = "none";
-  }, 4000); 
+  }, 3000); 
 });
