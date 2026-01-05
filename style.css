@@ -285,7 +285,7 @@ h2 {
   flex-wrap:wrap;
 }
 .skill-card{
-  width:150px;
+  width:130px;
   background:#fff;
   padding:20px;
   border-radius:12px;
@@ -297,10 +297,10 @@ h2 {
   gap:12px;
 }
 .skill-icon{
-  width:64px;
-  height:64px;
+  width:40px;
+  height:40px;
   border-radius:50%;
-  background:#fff4ee;
+  background:#ffff;
   display:flex;
   align-items:center;
   justify-content:center;
