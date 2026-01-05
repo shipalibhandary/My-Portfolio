@@ -261,6 +261,57 @@ h2 {
 .project-card.brown { background:#BBDCE5;}
 .project-card.dark{ background: #F5BABB; color: #fff;}
 
+/* skills section */
+.skills {
+  padding: 80px 20px;
+  background: #f7efe8;
+  text-align: center;
+}
+.skills-heading{
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: #4b2e2e;
+  margin-bottom:10px;
+}
+.skills-sub{
+  color:#7a5c5c;
+  margin-bottom:30px;
+  font-style:italic;
+}
+.skills-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+.skill-card{
+  width:150px;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+.skill-icon{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:#fff4ee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+}
+.skill-name{
+  font-weight:700;
+  color:#5a3825;
+  font-size:0.95rem;
+}
+
 /* certiificates */
 .certificate-section{
   text-align: center;
