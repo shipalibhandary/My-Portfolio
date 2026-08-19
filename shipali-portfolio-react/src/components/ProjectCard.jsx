@@ -13,10 +13,8 @@ function ProjectCard({ title, image, description, github, live, colorClass }) {
 
             {live && (
                 <>
-                    {" | "}
-                    <a href={live} target="_blank" rel="noopener noreferrer">
-                    Check Live
-                    </a>
+                    {"  ||  "}
+                    <a href={live} target="_blank" rel="noopener noreferrer">Check Live</a>
                 </>
             )}
         </div>

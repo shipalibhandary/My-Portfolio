@@ -746,7 +746,7 @@ h2 {
   justify-content: center;
   background: linear-gradient(135deg, #f7d6d3, #f0c2b8, #e7d8cc);
   animation: fadeOut 0.8s ease forwards;
-  animation-delay: 0.8s;
+  animation-delay: 1.3s;
 }
 
 .splash-content {
