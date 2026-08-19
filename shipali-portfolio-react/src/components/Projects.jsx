@@ -3,6 +3,14 @@ import ProjectCard from './ProjectCard';
 function Projects() {
   const projects = [
     {
+      title:'Case Velora- Airbnb Clone',
+      image:'/images/project-screenshots/Airbnb.png',
+      description:'A clone of Airbnb website built using React + vite.',
+      github:'https://github.com/shipalibhandary/Airbnb/tree/main/airbnb',
+      live :'https://airbnb-seven-bice.vercel.app/',
+      colorClass:'dark'
+    },
+    {
       title: 'Telegram-Dashboard',
       image: '/images/project-screenshots/telegram.png',
       description: 'An interactive dashboard for analyzing Telegram channel data.',
@@ -17,7 +25,7 @@ function Projects() {
       description: 'A personality prediction application built using machine learning.',
       github: 'https://github.com/shipalibhandary/Personality-Prediction',
       live: 'https://shipalibhandary-personalitypred-app-szsxhl.streamlit.app/',
-      colorClass: 'dark'
+      colorClass: 'brown'
     },
 
     {
@@ -26,7 +34,7 @@ function Projects() {
       description: 'An e-commerce website for a seamless shopping experience.',
       github: 'https://github.com/shipalibhandary/ElectraNexa',
       live: '',
-      colorClass: 'brown'
+      colorClass: 'dark'
     }
   ];
 
